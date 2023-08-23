@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de dados</title>
+</head>
+<body>
+    <h3>Utilize os botões para entrada de dados</h3>
+    <button onclick="document.getElementById('nome').innerHTML = prompt('digite seu nome')">Digite seu nome</button>
+    <button onclick="document.getElementById('sobrenome').innerHTML = prompt('digite seu sobrenome')">Digite seu sobrenome</button>
+    <button onclick="document.getElementById('nome').innerHTML =
+    '', document.getElementById('sobrenome').innerHTML = ''">Limpar</button>
+
+    <p id="nome"></p>
+    <p id="sobrenome"></p>
+</body>
+</html>

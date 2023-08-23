@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações</title>
+</head>
+<body>
+    <script>
+        let x = 5
+        let y = 2
+        let a = x + y
+        let b = x - y
+        let c = x * y
+        let d = x / y
+        let e = y ** x
+        let f = x % y
+
+    </script>
+    <h2>Operadores</h2>
+    <button onclick="document.getElementById('soma').innerHTML = (`soma: ${x} + ${y} = ${a}`)">+</button>
+    <button onclick="document.getElementById('sub').innerHTML = (`subtração: ${x} - ${y} = ${b}`)">-</button>
+    <button onclick="document.getElementById('multi').innerHTML = (`multiplicação: ${x} * ${y} = ${c}`)">*</button>
+    <button onclick="document.getElementById('divi').innerHTML = (`divisão: ${x} / ${y} = ${d}`)">/</button>
+    <button onclick="document.getElementById('expo').innerHTML = (`exponenciação: ${x} ** ${y} = ${e}`)">**</button>
+    <button onclick="document.getElementById('resto').innerHTML = (`resto: ${x} % ${y} = ${f}`)">%</button>
+
+    <button onclick="document.getElementById('igual').innerHTML = (`igual: ${x} == ${y} => ${x==y}`)">=</button>
+    <button onclick="document.getElementById('diferente').innerHTML = (`diferente: ${x} != ${y} => ${x!=y}`)">!=</button>
+    <button onclick="document.getElementById('maior').innerHTML = (`maior: ${x} > ${y} => ${x>y}`)">></button>
+    <button onclick="document.getElementById('menor').innerHTML = (`menor: ${x} < ${y} => ${x<y}`)"><</button>
+
+    <button onclick="document.getElementById('and').innerHTML = (`and: ${x} > ${y} e ${x} < ${a} => ${x>y && x<a}`)">and</button> <!--aqui se uma relação for falsa, a sentença inteira é falsa -->
+    <button onclick="document.getElementById('or').innerHTML = (`or: ${y} > ${x} ou ${x} > ${a} => ${y>x || x>a}`)">or</button> <!-- aqui se pelo menos uma relação for verdadeira, a sentença é verdadeira-->
+
+    <p id="soma">soma</p>
+    <p id="sub">subtração</p>
+    <p id="multi">multiplicação</p>
+    <p id="divi">divisão</p>
+    <p id="expo">exponenciação</p>
+    <p id="resto">resto</p>
+
+    <p id="igual">igual</p>
+    <p id="diferente">diferente</p>
+    <p id="maior">maior</p>
+    <p id="menor">menor</p>
+
+    <p id="and">and</p>
+    <p id="or">or</p>
+    
+</body>
+</html>
